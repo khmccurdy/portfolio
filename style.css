@@ -1,0 +1,50 @@
+:root{
+    --main-highlight-color: rgb(2, 165, 230);
+    --main-highlight-light: rgb(201, 230, 253);
+    --foreground-color: rgb(232, 238, 255);
+}
+
+nav {
+    background-color: var(--foreground-color);
+}
+
+.h {
+    color: var(--main-highlight-color);
+}
+
+.img-paragraph {
+    float: left;
+}
+
+.img-compare a {
+    text-align: center;
+    color: black;
+    overflow: hidden;
+}
+
+.content-box {
+    /* background-color: var(--foreground-color); */
+    margin: 30pt 5pt 10pt 5pt;
+    padding: 15pt;
+    overflow: auto;
+}
+
+body {
+    background-color: white;
+}
+
+.skills-text {
+    color: gray;
+    font-style: italic;
+    margin-bottom: 8pt;
+}
+
+#contact-list img {
+    width: 15pt;
+    vertical-align: -0.1em;
+    margin-right: 0.5em;
+}
+
+#contact-list {
+    padding-left: 0.5em;
+}

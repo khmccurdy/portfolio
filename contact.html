@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kevin McCurdy - Data Analyst</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+    <script src="navbar.js"></script>
+
+    <div class="container">
+        <div class="content-box">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>About / Contact</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="font-size: 14pt">
+                    <p><strong>Kevin McCurdy</strong> is a Data Analyst seeking a full-time position in the Bay Area. 
+                        Very quick learner who enjoys integrating new tools into workflows for data analysis and visualization, built on top of a background in mathematics and visual design. 
+                        Organized, detail-oriented and level-headed under pressure, with a knack for problem-solving, troubleshooting, and optimizing workflows. 
+                        B.A. in Mathematics with minor in Animation from University of Southern California, currently studying Data Analysis through UC Berkeley Extension.
+                    </p>
+                    <p><strong>Skills</strong><br>
+                        <i>Data</i>: Python, MySQL, Excel, VBA, MongoDB, JSON <br>
+                        <i>Web</i>: JavaScript, HTML5, CSS, Bootstrap, Flask, SVG, Heroku <br>
+                        <i>Python libraries</i>: Pandas, Numpy, Matplotlib, SQLAlchemy, BeautifulSoup, Splinter, OpenWeatherMap, Tweepy <br>
+                        <i>JavaScript libraries</i>: D3, JQuery, Plotly, Leaflet<br>
+                        <i>Other Languages</i>: ActionScript, Procesing (Java), Swift<br>
+                        <i>Software</i>: MS Office, Adobe Creative Suite, Git, Maya, Cinema 4D <br>
+                        <i>Other Skills</i>: Mathematics, Animation, Video Production / Editing, Piano Performance, Music Transcription, Acting
+                    </p>
+                    <ul style="list-style: none" id="contact-list">
+                        <li><a href="mailto:khmccurdy@aol.com">
+                            <img src="icons/email_icon.svg">khmccurdy@aol.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/kevin-mccurdy/">
+                            <img src="icons/linkedin_icon.svg">LinkedIn</a></li>
+                        <li><a href="https://github.com/khmccurdy">
+                            <img src="icons/github_icon.svg">GitHub</a></li>
+                        <li><a href="https://www.instagram.com/khmccurdy/">
+                            <img src="icons/instagram_icon.svg">Instagram</a></li>
+                        <li><a href="https://vimeo.com/khmccurdy">
+                            <img src="icons/vimeo_icon.svg">Vimeo</a></li>
+                        <li><a href="https://khmccurdy.wordpress.com">
+                            <img src="icons/wordpress_icon.svg">Animation</a></li>
+                        
+                    </ul>
+                    <script>
+                        d3.select("#contact-list")
+                            .selectAll("a")
+                            .attr("target","_blank")
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

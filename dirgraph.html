@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kevin McCurdy - Data Analyst</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+    <script src="navbar.js"></script>
+
+    <div class="container">
+        <div class="content-box">
+            <div class="row">
+                <div class="col-md-12" style="font-size: 14pt">
+                    <h2>Interactive Directed Graph</h2>
+                    <h4>Web of States of a Cell-Based Game</h4>
+                    <hr>
+                    <p>
+                        These graphs represent the connections between distinct turn states of two different
+                        levels of a game. Arrows connect states reachable by one move. Each state may lead to 
+                        at most 3 other states, but can be reached by an arbitrary number of other states. 
+                        Dark arrows connect to new states (efficient moves), while light arrows connect to 
+                        previously enumerated states (inefficient moves). The states are enumerated by the number
+                        and sequence of moves required to reach each game state, e.g. a state that takes 5
+                        moves to reach will always be clockwise from a state that takes 2 moves to reach. 
+                        The most efficient sequence of moves leading to a particular state is highlighted in red
+                        on mouse-over. 
+                    </p>
+                    <p>
+                        Each graph is generated using JavaScript, D3, and SVG based on a JavaScript object
+                        containing game state data for its respective level. Additional visualizations based
+                        on the source of this dataset include a <a href="https://www.instagram.com/p/BjLwaPMBZkD/?taken-by=khmccurdy" target="_blank">
+                        manually generated tree graph</a> (including failure states not visualized here) and 
+                        a <a href="https://www.instagram.com/p/Bi5EVZJBdat/?taken-by=khmccurdy" target="_blank">
+                        more concrete representation of one level</a> using Plotly's 3D scatter plot.
+                    </p>
+                    <p style="font-style: italic">Tools used: D3, JavaScript, SVG, HTML</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="graph-l1"></div>
+                </div>
+                <div class="col-md-6">
+                    <div id="graph-l6"></div>
+                </div>
+                <script src="assets/dirgraph/dirgraph_data.js"></script>
+                <script>
+                    var multiEmbed = true;
+                    var arrows = arrows1;
+                    var divID = "#graph-l1"
+                </script>
+                <script src="assets/dirgraph/dirgraph_plot.js"></script>
+                <script>
+                    arrows = arrows6;
+                    divID = "#graph-l6";
+                </script>
+                <script src="assets/dirgraph/dirgraph_plot.js"></script>
+            </div>
+        </div>
+    </div>
+    
+</body>
