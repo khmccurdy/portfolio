@@ -1,3 +1,6 @@
+try {multiEmbed}
+catch(ReferenceError){var multiEmbed = false}
+
 if (multiEmbed) {
     // arrows and divID set outside
 }else{
