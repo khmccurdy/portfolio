@@ -3,6 +3,10 @@ var $navDiv = d3.select("#navBar");
 var externalLinkTarget = d=>d.link.startsWith("http")?"_blank":"";
 
 var navDropdownElements = [
+    {label: "CitiBike Rental Dashboard", 
+        link: "bikes.html",
+        img: "images/bikes_thumb.png",
+        skills: "Tableau, Python, Pandas"},
     {label: "Census Data Interactive Chart", 
         link: "census.html",
         img: "images/census_thumb.png",
